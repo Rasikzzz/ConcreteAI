@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Concrete Strength Predictor</title>
+
+  <link rel="stylesheet" href="input.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h2>Enter Concrete Mix Details</h2>
+
+    <form id="predictForm" class="form-grid">
+
+      <div class="form-group">
+        <label for="cement">Cement (kg/m³)</label>
+        <input type="number" id="cement" required>
+      </div>
+
+      <div class="form-group">
+        <label for="slag">Blast Furnace Slag (kg/m³)</label>
+        <input type="number" id="slag" required>
+      </div>
+
+      <div class="form-group">
+        <label for="flyash">Fly Ash (kg/m³)</label>
+        <input type="number" id="flyash">
+      </div>
+
+      <div class="form-group">
+        <label for="water">Water (kg/m³)</label>
+        <input type="number" id="water" required>
+      </div>
+
+      <div class="form-group">
+        <label for="superplasticizer">Superplasticizer (kg/m³)</label>
+        <input type="number" id="superplasticizer">
+      </div>
+
+      <div class="form-group">
+        <label for="coarseaggregate">Coarse Aggregate (kg/m³)</label>
+        <input type="number" id="coarseaggregate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="fineaggregate">Fine Aggregate (kg/m³)</label>
+        <input type="number" id="fineaggregate" required>
+      </div>
+
+      <div class="form-group">
+        <label for="age">Age (days)</label>
+        <input type="number" id="age" required>
+      </div>
+
+      <div class="btn-box">
+        <button type="submit">Predict Strength</button>
+      </div>
+    </form>
+
+    <div class="result-box" id="resultBox">
+      <h3 id="resultText">Your result will appear here...</h3>
+    </div>
+
+  </div>
+
+  <script src="predict.js"></script>
+
+</body>
+</html>
