@@ -35,5 +35,4 @@ The project emphasizes **modern UI design** with:
 
 ---
 
-## Folder Structure
 
